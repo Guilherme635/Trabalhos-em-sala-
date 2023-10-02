@@ -1,0 +1,46 @@
+.botao-menu {
+    border: 1px solid #ccc;
+    height: 5rem;
+    padding-inline: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+
+    border: 1px solid #ccc;
+    width: 12rem;
+    height: calc(100vh- 5rem);
+    padding-left: 1.5rem;
+    padding-top: 1.5rem;
+    background: white;
+    transition: translate .4s; 
+}
+
+.menu nav {
+
+    display: flex;
+   flex-direction: column;
+   gap: 0.75rem;
+
+}
+
+.menu.close {
+  translate: -100%;
+}
+
+.menu-desktop {
+    display: none;
+}
+
+@media(min-width: 900px) {
+.menu-mobile {
+display: none;
+}
+}
+
+.menu-desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
